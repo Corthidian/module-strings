@@ -113,3 +113,12 @@ void clearScreen() {
   printf("\033[0;0f");
   printf("\n"); // print a new line for the sake of those on different systems
 }
+
+
+
+void initializeBlankString(int length, char *str) {
+    for (int i = 0; i < length; ++i) {
+        str[i] = '_';
+    }
+    str[length] = '\0'; 
+}
