@@ -122,3 +122,12 @@ void initializeBlankString(int length, char *str) {
     }
     str[length] = '\0'; 
 }
+
+
+void printWithSpaces(const char *str) {
+    int length = strlen(str);
+    for (int i = 0; i < length; ++i) {
+        printf("%c ", str[i]);
+    }
+    printf("\n");
+}
