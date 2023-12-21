@@ -183,3 +183,4 @@ program so that it can accept any number of words and words of any
 length from `dictionary.txt` (hint: you'll need to dynamically
 allocate the memory for the array in `main.c`, among other
 changes in `gameFunctions.h` and `gameFunctions.c`).
+# module-strings
