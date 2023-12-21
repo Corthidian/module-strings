@@ -131,3 +131,18 @@ void printWithSpaces(const char *str) {
     }
     printf("\n");
 }
+
+
+int revealGuessedLetter(const char *solution, char *revealed, char guessedLetter) {
+    int changes = 0;
+    int length = strlen(solution);
+
+    for (int i = 0; i < length; ++i) {
+        if (solution[i] == guessedLetter) {
+            revealed[i] = guessedLetter;
+            changes = 1; 
+        }
+    }
+
+    return changes;
+}
