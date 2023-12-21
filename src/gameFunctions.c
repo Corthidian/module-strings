@@ -146,3 +146,9 @@ int revealGuessedLetter(const char *solution, char *revealed, char guessedLetter
 
     return changes;
 }
+
+
+
+int checkGuess(const char *str1, const char *str2) {
+    return strcmp(str1, str2) == 0;
+}
